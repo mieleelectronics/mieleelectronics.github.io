@@ -1,0 +1,369 @@
+<!DOCTYPE html><html lang=ru><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Подбор техники Miele без звонка — Miele Electronics</title><meta name=description content="Ответьте на 7 вопросов — менеджер Miele Electronics пришлёт подборку с наличием, ценами и сроками. Гарантия 2 года, русификация, бесплатная доставка по Москве и СПб."><link rel=preconnect href='https://fonts.googleapis.com'><link href='https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap' rel=stylesheet><style>
+:root{--acc:#8c0014;--ink:#141414;--muted:#6b7280;--bg:#f4f5f7;--card:#fff;
+  --line:#e6e8ef;--r:18px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.55 Manrope,-apple-system,Segoe UI,Roboto,sans-serif}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+.blk{margin:14px 0}
+.card{background:var(--card);border-radius:var(--r)}
+.acc{color:var(--acc)}
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;cursor:pointer;
+  font:inherit;font-weight:700;border-radius:14px;padding:16px 26px;text-decoration:none}
+.btn-acc{background:var(--acc);color:#fff}
+.btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+h1,h2,h3{margin:0 0 10px;line-height:1.15;letter-spacing:-.01em}
+h1{font-size:44px;font-weight:800}
+h2{font-size:32px;font-weight:800}
+.lead{color:var(--muted);font-size:17px;margin:0}
+/* ── шапка ── */
+.hd{display:flex;align-items:center;gap:22px;padding:16px 22px;flex-wrap:wrap}
+.hd-logo{width:44px;height:44px;border-radius:12px;background:var(--acc);color:#fff;
+  display:grid;place-items:center;font-weight:800;overflow:hidden}
+.hd-name{font-weight:800}
+.hd-sub,.hd-note{color:var(--muted);font-size:13px}
+.hd-col{margin-right:auto}
+.hd-tel{font-size:22px;font-weight:800;color:var(--ink);text-decoration:none}
+/* ── герой ── */
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:0;overflow:hidden}
+.hero-l{padding:52px 46px}
+.hero-l .lead{margin:18px 0 26px;border-left:3px solid var(--acc);padding-left:14px}
+.hero-cta{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.hero-note{color:var(--muted);font-size:14px}
+.hero-call{margin-top:26px;color:var(--muted);font-size:14px}
+.hero-call b{color:var(--ink);font-size:17px}
+.hero-r{position:relative;min-height:420px;background:#e9ebf0}
+/* Кадр широкий (1920×859), а колонка узкая: по центру в кадр попадала пустая
+   тёмная стена, а сама машина уезжала за край. Держим правую часть снимка. */
+.hero-r img{width:100%;height:100%;object-fit:cover;object-position:72% center;
+  position:absolute;inset:0}
+.offer{position:absolute;right:28px;bottom:28px;background:rgba(255,255,255,.94);
+  border-radius:16px;padding:18px 22px;text-align:center;max-width:250px;
+  backdrop-filter:blur(4px)}
+.offer-t{font-size:13px;line-height:1.4}
+.offer-note{color:var(--muted);font-size:12px;margin-top:8px}
+/* ── простой заголовок ── */
+.head-s{text-align:center;padding:34px 20px 6px}
+.head-s .lead{margin-top:8px}
+/* ── карточки категорий ── */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.pc{background:var(--card);border-radius:var(--r);overflow:hidden;display:flex;
+  flex-direction:column}
+.pc-img{position:relative;aspect-ratio:16/10;background:#e9ebf0}
+.pc-img img{width:100%;height:100%;object-fit:cover}
+.pc-badge{position:absolute;left:12px;top:12px;background:var(--acc);color:#fff;
+  font-size:12px;font-weight:700;padding:5px 10px;border-radius:8px}
+.pc-b{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pc-n{font-weight:800;font-size:18px}
+.pc-d{color:var(--muted);font-size:14px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:2px 0 6px}
+.tag{background:var(--bg);color:var(--muted);font-size:12px;padding:5px 9px;border-radius:8px}
+.pc-f{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto}
+.pc.dark{background:#141414;color:#fff}
+.pc.dark .pc-d,.pc.dark .tag{color:#c9cdd6}
+.pc.dark .tag{background:rgba(255,255,255,.08)}
+.more{display:flex;justify-content:center;margin-top:16px}
+/* ── о компании / шаги ── */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:0;overflow:hidden}
+.about-img{min-height:440px;background:#e9ebf0}
+.about-img img{width:100%;height:100%;object-fit:cover}
+.about-b{padding:44px 42px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}
+.fact{background:var(--bg);border-radius:14px;padding:16px 18px}
+.fact b{display:block;color:var(--acc);font-size:15px;margin-bottom:6px}
+.fact span{color:var(--muted);font-size:13px;line-height:1.45}
+.about-cta{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.about-cta .tel{font-weight:800;font-size:18px;text-decoration:none;color:var(--ink)}
+input[type=tel],input[type=text]{font:inherit;padding:15px 16px;border:1px solid var(--line);
+  border-radius:14px;min-width:230px}
+.consent{color:var(--muted);font-size:12px;margin-top:8px;display:flex;gap:8px;
+align-items:flex-start;cursor:pointer;text-align:left}
+.consent input{margin-top:2px;flex:0 0 auto}
+.consent a{color:inherit}
+.req{color:var(--muted);font-size:12px;text-align:center;padding:24px 16px 40px}
+/* ── форма-блок ── */
+.lf{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center;padding:40px 42px}
+.lf form{display:flex;gap:12px;flex-wrap:wrap}
+/* ── контакты и карта ── */
+.cm{position:relative;overflow:hidden;min-height:420px;background:#e9ebf0}
+.cm iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.cm-card{position:relative;z-index:2;margin:34px;max-width:330px;background:#fff;
+  border-radius:16px;padding:24px 26px}
+.cm-row{display:flex;gap:10px;margin:12px 0;font-size:15px}
+.cm-row i{color:var(--acc);font-style:normal}
+@media(max-width:900px){
+  h1{font-size:31px}h2{font-size:24px}
+  .cards{grid-template-columns:1fr}
+  .about{grid-template-columns:1fr}.about-img{min-height:240px}.about-b{padding:26px 20px}
+  .facts{grid-template-columns:1fr}
+  .lf{grid-template-columns:1fr;padding:26px 20px}
+  .cm-card{margin:16px;max-width:none}
+  .hero{grid-template-columns:1fr}.hero-l{padding:28px 20px}
+  .hero-r{min-height:280px;position:relative}
+  .offer{right:14px;bottom:14px;padding:14px 16px;max-width:200px}
+  .hd{gap:12px}.hd-tel{font-size:18px}
+}
+</style><style>
+/* ── квиз-переписка ── */
+.qc{margin:14px 0}
+.qc-wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:16px}
+.qc-chat{background:var(--card);border-radius:var(--r);overflow:hidden;
+  display:flex;flex-direction:column;min-height:460px}
+.qc-head{display:flex;align-items:center;gap:12px;padding:14px 18px;
+  border-bottom:1px solid var(--line)}
+.qc-head{position:sticky;top:0;z-index:2;background:var(--card)}
+.qc-ava{width:46px;height:46px;border-radius:50%;object-fit:cover;flex:0 0 46px}
+/* Инициал, а не пустой кружок: серый круг без ничего читался как битая
+   картинка. Фон плотнее линии, чтобы буква не выглядела выцветшей. */
+.qc-ava-empty{background:var(--ink);color:var(--card);display:flex;
+  align-items:center;justify-content:center;font-weight:700;font-size:19px}
+.qc-name{font-weight:700}
+.qc-role{color:var(--muted);font-size:13px}
+.qc-online{margin-left:auto;color:var(--muted);font-size:13px;
+  display:flex;align-items:center;gap:6px}
+.qc-online i{width:8px;height:8px;border-radius:50%;background:#21c07a;display:block}
+.qc-feed{padding:16px 18px;display:flex;flex-direction:column;gap:10px;
+  overflow-y:auto;max-height:620px}
+.qc-msg{max-width:86%;padding:11px 14px;border-radius:16px;font-size:15px}
+.qc-sp{background:var(--bg);border-bottom-left-radius:6px;align-self:flex-start}
+.qc-me{background:var(--acc);color:#fff;border-bottom-right-radius:6px;align-self:flex-end}
+.qc-q{font-weight:600}
+.qc-step{color:var(--muted);font-size:12px;letter-spacing:.02em;margin-top:6px}
+.qc-typing{display:flex;gap:4px;align-items:center;padding:14px}
+.qc-typing i{width:6px;height:6px;border-radius:50%;background:var(--muted);
+  display:block;animation:qcb 1s infinite}
+.qc-typing i:nth-child(2){animation-delay:.15s}
+.qc-typing i:nth-child(3){animation-delay:.3s}
+@keyframes qcb{0%,60%,100%{opacity:.3}30%{opacity:1}}
+/* Вопрос — пузырём по содержимому, как обычная реплика. Без этого он тянулся
+   на всю ширину ленты и соседние одинаковые на вид пузыри вели себя
+   по-разному. Кнопки при этом остаются во всю ширину. */
+.qc-qblock{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.qc-qblock .qc-opts{align-self:stretch}
+/* варианты ответа */
+.qc-opts{display:flex;flex-wrap:wrap;gap:10px;margin:2px 0 6px}
+.qc-opts[data-kind=picks]{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+/* 🔴 Кнопка обязана читаться как кнопка: белая на белой карточке с рамкой
+   цвета линии давала контраст к фону ~1,1:1 — самый важный элемент блока
+   выглядел бледнее серых реплик и читался как заблокированное поле.
+   Рамка акцентная, 13px по вертикали — это 44px высоты под палец. */
+.qc-opt{position:relative;display:flex;align-items:center;gap:10px;cursor:pointer;
+  background:var(--card);border:1.5px solid var(--acc);border-radius:14px;
+  padding:13px 16px;font:inherit;font-size:14px;color:inherit;text-align:left;
+  box-shadow:0 1px 2px rgba(20,22,26,.07);
+  transition:background .15s,color .15s,transform .1s}
+.qc-opt:hover{background:var(--acc);color:#fff}
+.qc-opt:active{transform:scale(.99)}
+.qc-opts[data-kind=picks] .qc-opt{flex-direction:column;align-items:stretch;padding:8px}
+.qc-react{position:absolute;top:-10px;right:-6px;font-size:20px}
+.qc-input{flex:1;min-width:0;padding:12px 14px;border:1px solid var(--line);
+  border-radius:14px;font:inherit}
+/* финал */
+/* [hidden] обязан бить свой display, иначе форма видна до первого ответа —
+   и телефон уезжает с пустыми ответами. */
+.qc-final[hidden],.qc-qblock[hidden]{display:none}
+.qc-final{display:flex;flex-direction:column;gap:10px}
+.qc-form{background:var(--bg);border-radius:16px;padding:16px;display:grid;gap:10px}
+.qc-form-title{font-weight:700}
+.qc-form-sub{color:var(--muted);font-size:14px;margin-top:-6px}
+.qc-form input[type=tel]{padding:14px;border:1px solid var(--line);
+  border-radius:14px;font:inherit}
+/* Плейсхолдер был хромовским #757575 и выглядел как уже введённый номер. */
+.qc-form input[type=tel]::placeholder{color:var(--muted);opacity:1}
+/* Подпись кнопки прижималась влево: .btn наследует text-align:left ленты,
+   а кнопка растянута на всю ширину формы. */
+.qc-form .btn{display:flex;align-items:center;justify-content:center;
+  gap:8px;width:100%;padding:14px;text-align:center}
+/* Чекбокс согласия стоял на 4 px правее поля и кнопки — собственный отступ
+   чекбокса в браузере. Выравниваем по левому краю формы. */
+.qc-form .consent{align-items:flex-start}
+.qc-form .consent input{margin-left:0}
+/* правая колонка */
+.qc-side{background:var(--card);border-radius:var(--r);padding:22px;align-self:start}
+.qc-side h2{font-size:28px}
+/* Акцентная часть заголовка не рвётся переносом: «без | звонка» на двух
+   строках читается как две разные мысли. */
+.qc-side h2 .acc{white-space:nowrap}
+/* Согласие читаемо: var(--muted) на серой панели формы давал 4,43:1 —
+   чуть ниже нормы AA, а это юридически значимая строка. */
+.qc-form .consent{color:#5c6470}
+.qc-side-lead{color:var(--muted);margin:0 0 14px}
+.qc-gets-t{font-weight:700;margin-bottom:6px}
+.qc-gets ul{margin:0 0 14px;padding-left:18px;display:grid;gap:4px}
+@media(max-width:900px){
+  .qc-wrap{grid-template-columns:1fr}
+  .qc-side{order:-1}
+  .qc-feed{max-height:none}
+  .qc-msg{max-width:94%}
+  /* 🔴 Липкая шапка не работала на телефоне: sticky внутри предка с
+     overflow:hidden цепляется к нему, а не к экрану. Шапка уезжала вместе с
+     лентой, и посреди опроса было не видно, с кем идёт разговор. Углы режем
+     скруглением самой шапки — для этого overflow карточке и был нужен. */
+  .qc-chat{overflow:visible}
+  .qc-head{border-radius:var(--r) var(--r) 0 0}
+}
+</style></head><body><main class=wrap>
+
+<div class="df-b" data-df-block="hero" data-df-type="hero_timer_offer"><div class="blk card hd"><div class=hd-logo>M</div><div class=hd-col><div class=hd-name>Miele Electronics</div><div class=hd-sub>оригинальная техника Miele с 2015 года</div></div><div><div class=hd-sub>Шоурум</div><div>Москва, ул. Краснопрудная, 15, ТЦ «Краснопрудный»</div></div><div style="text-align:right"><div class=hd-note>Ежедневно с 10:00 до 22:00</div><a class=hd-tel href="tel:+78002226666">8 (800) 222-66-66</a></div></div><section class="blk card hero"><div class=hero-l><h1>Техника Miele <span class=acc>под вашу нишу</span></h1><p class=lead>Подберём модель по размерам и задаче — без звонка, если вы этого не хотите</p><div class=hero-cta><a class="btn btn-acc" href="#quiz">Подобрать за 7 вопросов ↗</a><span class=hero-note>Ответим и пришлём подборку с ценами</span></div><div class=hero-call>Или сразу звоните: <b>8 (800) 222-66-66</b></div></div><div class=hero-r><img src="img-qc/hero_top.webp" alt="Стиральная машина Miele в интерьере"><div class=offer><div class=offer-t>При покупке техники <b>от 30 000 ₽</b> — набор премиальной химии Miele в подарок</div><div class=offer-note>Гарантия 2 года от магазина</div></div></div></section></div>
+
+<div class="df-b" data-df-block="quiz_chat" data-df-type="quiz_chat"><section class="blk qc" id=quiz><div class=qc-wrap><div class=qc-chat><div class=qc-head><div class="qc-ava qc-ava-empty">А</div><div><div class=qc-name>Александра</div><div class=qc-role>консультант Miele Electronics</div></div><div class=qc-online><i></i>отвечает за минуту</div></div><div class=qc-feed data-intro-done=0><div class="qc-msg qc-sp">Здравствуйте! Помогу подобрать технику Miele под вашу задачу.</div><div class="qc-msg qc-sp">Семь коротких вопросов — и менеджер пришлёт подборку с наличием и ценами. <strong>Без звонка, если не захотите.</strong></div>
+
+<div class=qc-qblock data-q="category" data-field="Техника" hidden><div class=qc-step>Вопрос 1 из 7</div><div class="qc-msg qc-sp qc-q">Что вас интересует?</div><div class=qc-opts data-kind="picks"><button type=button class=qc-opt data-reply='{"mode":"text","text":"Хорошо. Подскажите ширину — 60 или 45 см? Если сомневаетесь: 45 не эконом-класс, отличие только в дисковом дозаторе, который узкой машине не нужен из-за меньшего объёма.","images":[],"before":"","after":"","reaction":"👍"}' data-label="Посудомоечная машина"><span>Посудомоечная машина</span></button><button type=button class=qc-opt data-reply='{"mode":"text","text":"Поняла. Уточню у менеджера комплект — стиральную и сушильную подбирают парой, чтобы встали в колонну друг на друга.","images":[],"before":"","after":"","reaction":"👍"}' data-label="Стирка и сушка"><span>Стирка и сушка</span></button><button type=button class=qc-opt data-reply='{"mode":"text","text":"Хорошо. Для духового шкафа менеджеру понадобятся размеры ниши — её высоту и глубину уточним дальше.","images":[],"before":"","after":"","reaction":"👍"}' data-label="Духовой шкаф"><span>Духовой шкаф</span></button><button type=button class=qc-opt data-reply='{"mode":"text","text":"Принято. По панели важен вырез в столешнице: если мебель уже сделана, подбираем строго под готовый вырез.","images":[],"before":"","after":"","reaction":"👍"}' data-label="Варочная панель"><span>Варочная панель</span></button><button type=button class=qc-opt data-reply='{"mode":"text","text":"Хорошо. Уточню, какие модели в наличии — встраиваемые и отдельно стоящие идут по разным сериям.","images":[],"before":"","after":"","reaction":"👍"}' data-label="Кофемашина"><span>Кофемашина</span></button><button type=button class=qc-opt data-reply='{"mode":"text","text":"Принято. Здесь тоже начнём с исполнения: встраиваемый или отдельно стоящий.","images":[],"before":"","after":"","reaction":"👍"}' data-label="Холодильник или винный шкаф"><span>Холодильник или винный шкаф</span></button></div></div>
+
+<div class=qc-qblock data-q="built_in" data-field="Исполнение" hidden><div class=qc-step>Вопрос 2 из 7</div><div class="qc-msg qc-sp qc-q">Исполнение — встраиваемое или отдельно стоящее?</div><div class=qc-opts data-kind="list"><button type=button class=qc-opt data-reply='{"mode":"text","text":"Тогда главное — габариты ниши. Их спрошу следующим вопросом: по ним менеджер сразу отсечёт то, что не встанет.","images":[],"before":"","after":"","reaction":""}' data-label="Встраиваемое"><span>Встраиваемое</span></button><button type=button class=qc-opt data-reply='{"mode":"text","text":"Хорошо, «соло». Размеры ниши тогда не критичны, но место под технику всё равно уточним.","images":[],"before":"","after":"","reaction":""}' data-label="Отдельно стоящее"><span>Отдельно стоящее</span></button><button type=button class=qc-opt data-reply='{"mode":"text","text":"Нормально. Менеджер покажет оба варианта — встраиваемую технику берут под готовую мебель, отдельно стоящую проще перевезти при переезде. А можно приехать в шоурум и посмотреть вживую.","images":[],"before":"","after":"","reaction":""}' data-label="Пока не решил"><span>Пока не решил</span></button></div></div>
+
+<div class=qc-qblock data-q="dimensions" data-field="Габариты" hidden><div class=qc-step>Вопрос 3 из 7</div><div class="qc-msg qc-sp qc-q">Какие габариты нужны? Можно просто ширину — или индекс модели, если он уже есть.</div><div class=qc-opts data-kind=input><input type=text class=qc-input placeholder="например: ниша 60 см · или WEI 865 WPS"><button type=button class="btn btn-acc qc-send">Ответить</button></div></div>
+
+<div class=qc-qblock data-q="furniture_ordered" data-field="Мебель" hidden><div class=qc-step>Вопрос 4 из 7</div><div class="qc-msg qc-sp qc-q">Мебель уже заказана?</div><div class=qc-opts data-kind="list"><button type=button class=qc-opt data-reply='{"mode":"text","text":"Это важно — передам менеджеру отдельно. Под готовую мебель подбираем строго по вашим размерам, без «примерно подойдёт».","images":[],"before":"","after":"","reaction":""}' data-label="Да, размеры жёсткие"><span>Да, размеры жёсткие</span></button><button type=button class=qc-opt data-reply='{"mode":"text","text":"Удобный момент: менеджер подскажет размеры под технику, пока мебель не заказана, — переделывать не придётся.","images":[],"before":"","after":"","reaction":""}' data-label="Нет, ещё планирую"><span>Нет, ещё планирую</span></button><button type=button class=qc-opt data-reply='{"mode":"text","text":"Поняла, тогда к мебели не привязываемся.","images":[],"before":"","after":"","reaction":""}' data-label="Техника отдельно стоящая"><span>Техника отдельно стоящая</span></button></div></div>
+
+<div class=qc-qblock data-q="region" data-field="Регион" hidden><div class=qc-step>Вопрос 5 из 7</div><div class="qc-msg qc-sp qc-q">Откуда вы? От этого зависят доставка и сроки.</div><div class=qc-opts data-kind="list"><button type=button class=qc-opt data-reply='{"mode":"text","text":"Тогда доставка бесплатная. Если позиция есть в наличии, привезём уже на следующий день в удобное время.","images":[],"before":"","after":"","reaction":""}' data-label="Москва"><span>Москва</span></button><button type=button class=qc-opt data-reply='{"mode":"text","text":"У нас и в Петербурге есть шоурум с полным ассортиментом — можно посмотреть технику вживую. Доставка по городу бесплатная.","images":[],"before":"","after":"","reaction":""}' data-label="Санкт-Петербург"><span>Санкт-Петербург</span></button><button type=button class=qc-opt data-reply='{"mode":"text","text":"Отправляем транспортной компанией по всей России. Техника едет в обрешётке и застрахована, а обслуживать её можно в авторизованных сервисных центрах — они есть по всей стране.","images":[],"before":"","after":"","reaction":""}' data-label="Другой регион"><span>Другой регион</span></button></div></div>
+
+<div class=qc-qblock data-q="deadline" data-field="Срок покупки" hidden><div class=qc-step>Вопрос 6 из 7</div><div class="qc-msg qc-sp qc-q">Когда планируете покупку?</div><div class=qc-opts data-kind="list"><button type=button class=qc-opt data-reply='{"mode":"text","text":"Хорошо, помечу как срочное — менеджер свяжется первым делом и сверит наличие по складу.","images":[],"before":"","after":"","reaction":""}' data-label="На этой неделе"><span>На этой неделе</span></button><button type=button class=qc-opt data-reply='{"mode":"text","text":"Принято. Если позиция понравится, менеджер может отложить её, чтобы не разобрали.","images":[],"before":"","after":"","reaction":""}' data-label="В этом месяце"><span>В этом месяце</span></button><button type=button class=qc-opt data-reply='{"mode":"text","text":"Это нормально. Пришлём подборку — будет с чем сравнивать, и никто не будет вам звонить каждый день.","images":[],"before":"","after":"","reaction":""}' data-label="Пока смотрю варианты"><span>Пока смотрю варианты</span></button></div></div>
+
+<div class=qc-qblock data-q="budget" data-field="Бюджет" hidden><div class=qc-step>Вопрос 7 из 7</div><div class="qc-msg qc-sp qc-q">На какой бюджет ориентируетесь?</div><div class=qc-opts data-kind="list"><button type=button class=qc-opt data-reply='{"mode":"text","text":"Принято, подберём в этих рамках.","images":[],"before":"","after":"","reaction":""}' data-label="До 150 000 ₽"><span>До 150 000 ₽</span></button><button type=button class=qc-opt data-reply='{"mode":"text","text":"Принято, передам менеджеру.","images":[],"before":"","after":"","reaction":""}' data-label="150 000 – 400 000 ₽"><span>150 000 – 400 000 ₽</span></button><button type=button class=qc-opt data-reply='{"mode":"text","text":"Принято. Если собираете комплект на кухню, менеджер посмотрит условия на всю подборку сразу.","images":[],"before":"","after":"","reaction":""}' data-label="Больше 400 000 ₽"><span>Больше 400 000 ₽</span></button><button type=button class=qc-opt data-reply='{"mode":"text","text":"Не проблема. Менеджер пришлёт варианты в разных ценах — сориентируетесь по месту.","images":[],"before":"","after":"","reaction":""}' data-label="Пока не знаю"><span>Пока не знаю</span></button></div></div>
+
+<div class=qc-final hidden><div class="qc-msg qc-sp">Спасибо! Передаю менеджеру — он сверит наличие по складу и пришлёт подборку с ценами.</div><div class="qc-msg qc-sp">Куда отправить? Напишите номер — менеджер свяжется в мессенджере или позвонит, как вам удобнее.</div><form method=post data-df-form=1 data-df-source="Квиз-переписка Miele" action="#" class=qc-form><div style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden" aria-hidden="true"><input type="text" name="_hp" tabindex="-1" autocomplete="off"></div><div class=qc-form-title>Куда отправить подборку</div><div class=qc-form-sub>Ответим в рабочее время: ежедневно с 10:00 до 22:00</div><input type=hidden name=quiz_answers class=qc-answers><input type=tel name=phone placeholder="+7 (___) ___-__-__" required><button class="btn btn-acc" type=submit>Получить подборку</button><label class=consent><input type=checkbox name=consent required><span>Согласен на обработку персональных данных</span></label></form></div></div></div>
+
+<aside class=qc-side><h2>Подбор техники Miele <span class=acc>без звонка</span></h2><p class=qc-side-lead>Ответьте на вопросы — менеджер пришлёт подборку с наличием, ценами и сроками доставки. Два шоурума: Москва и Санкт-Петербург.</p><div class=qc-gets><div class=qc-gets-t>В конце получите:</div><ul><li>Подборку моделей под вашу нишу и задачу</li><li>Гарантию 2 года от магазина на каждую позицию</li><li>Доставку по Москве и Петербургу бесплатно, по России — транспортной компанией</li><li>Русификацию меню и инструкций, полный пакет документов</li><li>Счёт для юридического лица, если нужен</li></ul></div></aside></div></section></div>
+
+<div class="df-b" data-df-block="cats" data-df-type="services_photo_cards"><section class=blk><div class=head-s><h2>Что подбираем <span class=acc>чаще всего</span></h2><p class=lead>Вся техника — оригинальная, с гарантией 2 года и документами.</p></div><div class=cards><article class="pc"><div class=pc-img><img src="img-qc/cat_stiralnye.webp" alt="Стиральные и сушильные машины Miele" loading=lazy></div><div class=pc-b><div class=pc-n>Стиральные и сушильные</div><div class=pc-d>Подбираем парой, чтобы встали в колонну друг на друга.</div><div class=tags><span class=tag>60 см</span><span class=tag>узкие</span><span class=tag>колонна</span></div><div class=pc-f><a class="btn btn-acc" href="#quiz" style="padding:12px 18px">Подобрать ↗</a></div></div></article><article class="pc"><div class=pc-img><img src="img-qc/cat_posudo.webp" alt="Посудомоечные машины Miele" loading=lazy></div><div class=pc-b><div class=pc-n>Посудомоечные машины</div><div class=pc-d>60 и 45 см, встраиваемые под готовый фасад.</div><div class=tags><span class=tag>60 см</span><span class=tag>45 см</span><span class=tag>встраиваемые</span></div><div class=pc-f><a class="btn btn-acc" href="#quiz" style="padding:12px 18px">Подобрать ↗</a></div></div></article><article class="pc dark"><div class=pc-img><img src="img-qc/cat_kofe.webp" alt="Кофемашина Miele" loading=lazy></div><div class=pc-b><div class=pc-n>Кофемашины и кухня</div><div class=pc-d>Духовые шкафы, варочные панели, кофемашины — под размеры ниши.</div><div class=tags><span class=tag>встраиваемые</span><span class=tag>соло</span><span class=tag>комплект</span></div><div class=pc-f><a class="btn btn-acc" href="#quiz" style="padding:12px 18px">Подобрать ↗</a></div></div></article></div><div class=more><a class="btn btn-ghost" href="#quiz">Не нашли нужное — спросите</a></div></section></div>
+
+<div class="df-b" data-df-block="form1" data-df-type="lead_form"><section class="blk card lf" id=zayavka><div><h2>Не знаете, <span class=acc>что подойдёт?</span></h2><p class=lead>Назовите размеры ниши — менеджер отсечёт то, что не встанет, и пришлёт варианты с ценами.</p></div><div><form method=post data-df-form=1 data-df-source="Форма на странице Miele" action="#zayavka"><div style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden" aria-hidden="true"><input type="text" name="_hp" tabindex="-1" autocomplete="off"></div><input type=tel name=phone placeholder="+7 (___) ___-__-__" required><button class="btn btn-acc" type=submit>Получить подборку ↗</button></form><label class=consent><input type=checkbox name=consent required><span>Согласен на обработку персональных данных</span></label></div></section></div>
+
+<div class="df-b" data-df-block="about" data-df-type="about_stats_photo"><section class="blk card about"><div class=about-img><img src="img-qc/about.webp" alt="Miele Electronics — шоурум и зал" loading=lazy></div><div class=about-b><h2>Четыре шага <span class=acc>до доставки</span></h2><p class=lead>Работаем с 2015 года — за это время собрали кухни 12 000 семьям.</p><div class=facts><div class=fact><b>Шаг 1 — Заявка</b><span>Отвечаете на вопросы в чате или оставляете телефон. Отвечаем ежедневно с 10:00 до 22:00.</span></div><div class=fact><b>Шаг 2 — Подбор по нише</b><span>Сверяем габариты и наличие на складе, присылаем варианты с ценами и сроками.</span></div><div class=fact><b>Шаг 3 — Оформление</b><span>Фиксируем цену письменно. Гарантийный талон, чеки и документы — на каждый прибор.</span></div><div class=fact><b>Шаг 4 — Доставка</b><span>По Москве и Петербургу бесплатно, по России — транспортной компанией. Меню и инструкции русифицированы.</span></div></div><div class=about-cta><a class="btn btn-acc" href="#quiz">Подобрать ↗</a><a class=tel href="tel:+78002226666">8 (800) 222-66-66</a><span class=hero-note>Звоните или пишите</span></div></div></section></div>
+
+<div class="df-b" data-df-block="contacts" data-df-type="contacts_map"><section class="blk cm"><iframe src="https://yandex.ru/map-widget/v1/?text=Москва%2C%20улица%20Краснопрудная%2C%2015&z=16" allowfullscreen loading=lazy title="Шоурум Miele Electronics на карте"></iframe><div class=cm-card><h3 style="font-size:22px">Контакты</h3><div class=cm-row><i>☎</i><a class=hd-tel href="tel:+78002226666" style="font-size:17px">8 (800) 222-66-66</a></div><div class=cm-row><i>⌖</i><span>Москва, ул. Краснопрудная, 15, этаж 2, ТЦ «Краснопрудный»</span></div><div class=cm-row><i>⌖</i><span>Санкт-Петербург, Лиговский проспект, 30, этаж 3</span></div><div class=cm-row><i>✉</i><a href="mailto:miele@miele-electronics.ru" style="color:inherit">miele@miele-electronics.ru</a></div><div class=cm-row><i>◷</i><span>Ежедневно с 10:00 до 22:00</span></div><a class="btn btn-acc" href="#quiz" style="margin-top:10px">Подобрать ↗</a></div></section></div>
+
+<p class=req>Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</p>
+</main><script>
+(function(){
+for (const блок of document.querySelectorAll('.qc')) {
+  const лента  = блок.querySelector('.qc-feed');
+  const шаги   = [...блок.querySelectorAll('.qc-qblock')];
+  const финал  = блок.querySelector('.qc-final');
+  const ответы = [];
+  let текущий  = 0;
+
+  // Пауза перед репликой: без неё диалог не читается как диалог — всё
+  // появляется разом и снова выглядит анкетой. Длительность берём от длины
+  // текста, но с потолком, чтобы на длинной реплике человек не ждал.
+  const пауза = т => Math.min(1200, 350 + (т || '').length * 12);
+
+  // Крутим ТОЛЬКО ленту и только когда у неё есть собственный скролл.
+  // scrollIntoView на телефоне уводил вниз весь документ: там у ленты снят
+  // max-height, и человек приземлялся в середину чата, не увидев заголовка.
+  function прокрутить(){
+    // На десктопе лента крутится внутри себя — документ трогать нельзя.
+    if (лента.scrollHeight - лента.clientHeight > 8) {
+      лента.scrollTo({top: лента.scrollHeight, behavior: 'smooth'});
+      return;
+    }
+    // На телефоне у ленты снято ограничение высоты, и крутить приходится
+    // документ. Только 'nearest': он подвинет экран ровно настолько, чтобы
+    // показать новое, и не утащит страницу вниз, когда всё и так видно.
+    //
+    // 🔴 Берём последний ВИДИМЫЙ элемент, а не lastElementChild: последней в
+    // ленте лежит финальная форма, и до конца опроса она hidden. У скрытого
+    // элемента нет геометрии, scrollIntoView по нему не делает ничего —
+    // на телефоне реплика и следующий вопрос появлялись ниже экрана, а
+    // страница стояла на месте (scrollY = 0 после ответа).
+    const видимые = [...лента.children].filter(э => !э.hidden);
+    const п = видимые[видимые.length - 1];
+    if (п && п.scrollIntoView) п.scrollIntoView({behavior:'smooth', block:'nearest'});
+  }
+
+  function печатает(готово){
+    const и = document.createElement('div');
+    и.className = 'qc-msg qc-sp qc-typing';
+    и.innerHTML = '<i></i><i></i><i></i>';
+    лента.insertBefore(и, финал);
+    прокрутить();
+    return setTimeout(() => { и.remove(); готово(); }, 650);
+  }
+
+  function добавить(html, свой){
+    const э = document.createElement('div');
+    э.className = свой ? 'qc-msg qc-me' : 'qc-msg qc-sp';
+    э.innerHTML = html;
+    лента.insertBefore(э, финал);
+    прокрутить();
+    return э;
+  }
+
+  function ответСпециалиста(данные, дальше){
+    if (!данные || !данные.mode) { дальше(); return; }
+    печатает(() => {
+      добавить(данные.text || '');
+      setTimeout(дальше, пауза(данные.text));
+    });
+  }
+
+  function показатьШаг(i){
+    if (i >= шаги.length) {
+      печатает(() => { финал.hidden = false; прокрутить(); });
+      return;
+    }
+    // Вопросы лежат в разметке подряд, а реплики дописываются в конец ленты.
+    // Если не перенести вопрос вниз, получится анкета сверху и лог снизу
+    // вместо переписки: сначала все вопросы стопкой, потом все ответы.
+    лента.insertBefore(шаги[i], финал);
+    шаги[i].hidden = false;
+    прокрутить();
+  }
+
+  function принять(шаг, подпись, данные){
+    ответы.push({q: шаг.dataset.field || шаг.dataset.q, a: подпись});
+    шаг.querySelector('.qc-opts').remove();     // выбор сделан — кнопки убираем
+    добавить(подпись, true);
+    ответСпециалиста(данные, () => { текущий++; показатьШаг(текущий); });
+  }
+
+  блок.addEventListener('click', e => {
+    const кнопка = e.target.closest('.qc-opt');
+    if (кнопка) {
+      const шаг = кнопка.closest('.qc-qblock');
+      let данные = {};
+      try { данные = JSON.parse(кнопка.dataset.reply || '{}'); } catch (_) {}
+      if (данные.reaction) {
+        кнопка.insertAdjacentHTML('afterbegin',
+          '<span class=qc-react>' + данные.reaction + '</span>');
+      }
+      принять(шаг, кнопка.dataset.label || '', данные);
+      return;
+    }
+    const отправить = e.target.closest('.qc-send');
+    if (отправить) {
+      const шаг = отправить.closest('.qc-qblock');
+      const поле = шаг.querySelector('.qc-input');
+      const текст = (поле.value || '').trim();
+      if (!текст) { поле.focus(); return; }
+      принять(шаг, текст, {});
+    }
+  });
+
+  // Ответы уезжают вместе с телефоном: без них менеджер получит голый номер
+  // и не поймёт, о чём человек спрашивал.
+  const форма = блок.querySelector('.qc-form');
+  if (форма) {
+    форма.addEventListener('submit', () => {
+      const поле = форма.querySelector('.qc-answers');
+      // С подписью поля: менеджер читает заявку глазами, и «Мебель: да,
+      // размеры жёсткие» он понимает, а голое «да» — нет.
+      if (поле) поле.value = ответы.map(о => о.q + ': ' + о.a).join('; ');
+    });
+  }
+
+  // Интро показано сразу в разметке — значит первый вопрос открываем, как
+  // только человек долистал до блока, а не при загрузке страницы.
+  const старт = () => { if (!шаги.length) return; показатьШаг(0); };
+  if ('IntersectionObserver' in window) {
+    const н = new IntersectionObserver((записи, наб) => {
+      if (записи.some(з => з.isIntersecting)) { старт(); наб.disconnect(); }
+    }, {threshold: 0.25});
+    н.observe(блок);
+  } else { старт(); }
+}
+})();
+</script>
+</body></html>
